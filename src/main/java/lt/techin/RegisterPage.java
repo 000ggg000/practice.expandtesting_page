@@ -1,5 +1,6 @@
 package lt.techin;
 
+import net.bytebuddy.utility.RandomString;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -20,9 +21,7 @@ public class RegisterPage extends BasePage {
         super(driver);
     }
 
-    public void waiting() {
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-    }
+
 
 
     public void clickToRegister() {
@@ -32,4 +31,5 @@ public class RegisterPage extends BasePage {
     public void clickToLogin() {
         loginButton2.click();
     }
+
 }

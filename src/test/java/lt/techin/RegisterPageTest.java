@@ -1,9 +1,16 @@
 package lt.techin;
 
+import lt.techin.utils.TestUtils;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import org.slf4j.Logger;
+
+import static java.lang.invoke.MethodHandles.lookup;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.slf4j.LoggerFactory.getLogger;
 
 public class RegisterPageTest extends BasePageTest {
+    private static final Logger log = getLogger(lookup().lookupClass());
 
     @Test
     void register() {
@@ -13,26 +20,31 @@ public class RegisterPageTest extends BasePageTest {
         LoginPage loginPage = new LoginPage(driver);
         AccountLogedPage accountLogedPage = new AccountLogedPage(driver);
         registerPage.clickToRegister();
-        createAccount.insertEmail("useruser12345678901012345678@mail.com");
+        String email = TestUtils.getComplexRandomMail();
+        String password = "John123";
+        createAccount.insertEmail(email);
         createAccount.insertName("John");
-        createAccount.insertPassword("John123");
-        createAccount.insertConfirmPassword("John123");
+        createAccount.insertPassword(password);
+        createAccount.insertConfirmPassword(password);
         createAccount.clickRegister();
-        waiting();
-        Assertions.assertEquals("User account created successfully", createAccount.registerAllert.getText(), "Account was not created");
+
+        assertEquals("User account created successfully", createAccount.registerAllert.getText(), "Account was not created");
+        log.info("Account created with email {}", email);
+        TestUtils.takeScreenshot(driver, "accountCreated");
         accountPage.setLoginAfterRegister();
-        loginPage.setInputEmail("useruser12345678901012345678@mail.com");
-        loginPage.setInputPassword("John123");
-        loginPage.clickLoginButton();
-        waiting();
-        Assertions.assertEquals("Logout", accountLogedPage.logoutButton.getText(), "Were not succesfully loggged in");
+//        loginPage.setInputEmail(email);
+//        loginPage.setInputPassword("John123");
+//        loginPage.clickLoginButton();
+        loginPage.login(email, password);
+
+        assertEquals("Logout", accountLogedPage.logoutButton.getText(), "Were not succesfully loggged in");
         accountLogedPage.setLogoutButton();
-        waiting();
-        Assertions.assertEquals("Login", registerPage.loginButton2.getText(), "were not succesfully logout");
-        waiting();
+
+        assertEquals("Login", registerPage.loginButton2.getText(), "were not succesfully logout");
+
         registerPage.clickToLogin();
-        waiting();
-        Assertions.assertEquals("https://practice.expandtesting.com/notes/app/login", driver.getCurrentUrl(), "Were not redirected");
+
+        assertEquals("https://practice.expandtesting.com/notes/app/login", driver.getCurrentUrl(), "Were not redirected");
 
     }
 
@@ -55,8 +67,7 @@ public class RegisterPageTest extends BasePageTest {
         createAccount.insertPassword("John123");
         createAccount.insertConfirmPassword("John123");
         createAccount.clickRegister();
-        waiting();
-        Assertions.assertEquals("An account already exists with the same email address", createAccount.existingAccountMessage.getText(), "Account already exist");
+        assertEquals("An account already exists with the same email address", createAccount.existingAccountMessage.getText(), "Account already exist");
 
     }
 
