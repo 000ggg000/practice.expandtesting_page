@@ -15,6 +15,9 @@ public class LoginPage extends BasePage{
     @FindBy(xpath = "//button[@class='btn btn-lg btn-primary d-block w-100']")
     WebElement loginButton;
 
+    @FindBy(xpath = "//a[@class='btn btn-outline-primary me-2 mb-2 mb-sm-0']")
+    WebElement profileButton;
+
     public LoginPage(WebDriver driver) {
         super(driver);
     }
@@ -33,5 +36,9 @@ public class LoginPage extends BasePage{
         setInputEmail(email);
         setInputPassword(password);
         clickLoginButton();
+    }
+
+    void viewProfile(){
+        profileButton.click();
     }
 }

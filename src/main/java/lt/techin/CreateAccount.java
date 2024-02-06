@@ -4,8 +4,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import java.util.List;
-
 
 public class CreateAccount extends BasePage{
     @FindBy(id = "email")
@@ -51,4 +49,8 @@ public class CreateAccount extends BasePage{
     public void clickRegister() {
         registerButton.click();
     }
+
+    boolean errorIsDisplayed() {
+
+        return errormessage.isDisplayed();    }
 }

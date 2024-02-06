@@ -1,0 +1,22 @@
+2024-02-06 13:38:19 [main] TRACE lt.techin.RegisterPageTest - Generated mail tnz550XAY1707219499823@mail.com
+2024-02-06 13:38:20 [main] INFO  lt.techin.RegisterPageTest - Account created with email tnz550XAY1707219499823@mail.com
+2024-02-06 13:38:20 [main] INFO  lt.techin.utils.TestUtils - Screenshot moved to C:\Users\Vartotojas\Desktop\AutomatinisTestavimas\2024-02-05\CreateAnAccount\test-output\screenshots\20240206\133820510_accountCreated.png
+2024-02-06 13:38:22 [main] INFO  lt.techin.RegisterPageTest - text
+2024-02-06 13:38:23 [main] INFO  lt.techin.BasePageTest - WebDriver closed
+2024-02-06 13:39:35 [main] INFO  lt.techin.RegisterPageTest - Account created with email amc014YBY1707219575102@mail.com
+2024-02-06 13:39:35 [main] INFO  lt.techin.utils.TestUtils - Screenshot moved to C:\Users\Vartotojas\Desktop\AutomatinisTestavimas\2024-02-05\CreateAnAccount\test-output\screenshots\20240206\133935796_accountCreated.png
+2024-02-06 13:39:37 [main] INFO  lt.techin.RegisterPageTest - text
+2024-02-06 13:39:38 [main] INFO  lt.techin.BasePageTest - WebDriver closed
+2024-02-06 13:44:29 [main] INFO  lt.techin.BasePageTest - WebDriver closed
+2024-02-06 14:11:06 [main] INFO  lt.techin.RegisterPageTest - Account created with email jli214VOP1707221465903@mail.com
+2024-02-06 14:11:06 [main] INFO  lt.techin.utils.TestUtils - Screenshot moved to C:\Users\Vartotojas\Desktop\AutomatinisTestavimas\2024-02-05\CreateAnAccount\test-output\screenshots\20240206\141106721_accountCreated.png
+2024-02-06 14:11:08 [main] INFO  lt.techin.RegisterPageTest - text
+2024-02-06 14:11:09 [main] INFO  lt.techin.BasePageTest - WebDriver closed
+2024-02-06 14:11:11 [main] INFO  lt.techin.BasePageTest - WebDriver closed
+2024-02-06 14:11:14 [main] INFO  lt.techin.RegisterPageTest - Account already exist message.
+2024-02-06 14:11:14 [main] INFO  lt.techin.BasePageTest - WebDriver closed
+2024-02-06 14:27:20 [main] INFO  lt.techin.RegisterPageTest - Account created with email lvo754LPO1707222439564@mail.com
+2024-02-06 14:27:20 [main] INFO  lt.techin.utils.TestUtils - Screenshot moved to C:\Users\Vartotojas\Desktop\AutomatinisTestavimas\2024-02-05\CreateAnAccount\test-output\screenshots\20240206\142720263_accountCreated.png
+2024-02-06 14:27:22 [main] INFO  lt.techin.utils.TestUtils - Screenshot moved to C:\Users\Vartotojas\Desktop\AutomatinisTestavimas\2024-02-05\CreateAnAccount\test-output\screenshots\20240206\142722215_Logged out from the account..png
+2024-02-06 14:27:23 [main] INFO  lt.techin.RegisterPageTest - The user was redirected to the login page
+2024-02-06 14:27:23 [main] INFO  lt.techin.BasePageTest - WebDriver closed
