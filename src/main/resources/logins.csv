@@ -1,0 +1,11 @@
+email, name, password, confirm, errorMessage
+useraruser1234@mail.com, "", John123, John123, User name is required,
+"", John, John123, John123, Email address is required,
+useraruser1234@mail.com, John,"", John123, Password is required,
+useraruser1234@mail.com, John, John123,"", Confirm Password is required,
+useraruser1234@mail.com, John, John123, Jon123, Passwords don't match!,
+useraruser1234@mail.com, John, John12, Jon12, Password should be between 6 and 30 characters,
+useraruser1234@mail.com, J, John12, Jon12, User name should be between 4 and 30 characters,
+useraruser1234mail.com, John, John12, Jon12, Email address is invalid,
+useraruser1234@mailcom, John, John12, Jon12, Email address is invalid,
+useraruser1234@mail.com, John, John12, Jon12, Email address is invalid,

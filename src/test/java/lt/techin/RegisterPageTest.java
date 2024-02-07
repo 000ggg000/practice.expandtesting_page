@@ -3,10 +3,14 @@ package lt.techin;
 import lt.techin.utils.TestUtils;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvFileSource;
+import org.openqa.selenium.By;
 import org.slf4j.Logger;
 
 import static java.lang.invoke.MethodHandles.lookup;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static java.time.Duration.ofSeconds;
+import static org.junit.jupiter.api.Assertions.*;
 import static org.slf4j.LoggerFactory.getLogger;
 
 public class RegisterPageTest extends BasePageTest {
@@ -32,7 +36,7 @@ public class RegisterPageTest extends BasePageTest {
         createAccount.clickRegister();
         assertEquals("User account created successfully", createAccount.registerAllert.getText(), "Account was not created");
         log.info("Account created with email {}", email);
-        TestUtils.takeScreenshot(driver, "accountCreated");
+        TestUtils.takeScreenshot(driver, "account Created");
         accountPage.setLoginAfterRegister();
 //        loginPage.setInputEmail(email);
 //        loginPage.setInputPassword("John123");
@@ -59,9 +63,9 @@ public class RegisterPageTest extends BasePageTest {
         CreateAccount createAccount = new CreateAccount(driver);
         registerPage.clickToRegister();
         createAccount.clickRegister();
-        Assertions.assertTrue(createAccount.errorIsDisplayed());
+        assertTrue(createAccount.errorIsDisplayed());
         log.debug("Error message appeared.");
-        TestUtils.takeScreenshot(driver, "Error messages appear.");
+        TestUtils.takeScreenshot(driver, "Error messages appeared.");
     }
 
     @Test
@@ -77,6 +81,27 @@ public class RegisterPageTest extends BasePageTest {
         assertEquals("An account already exists with the same email address", createAccount.existingAccountMessage.getText(), "Account already exist");
         log.info("Account already exist message.");
         TestUtils.takeScreenshot(driver, "Error messages appeared.");
+    }
+
+    @ParameterizedTest
+    @CsvFileSource(files = "src/main/resources/logins.csv", numLinesToSkip = 1)
+    void testWithCsvFileSourceFromFile(String email, String name, String password, String confirm, String errorMessage) {
+        RegisterPage registerPage = new RegisterPage(driver);
+        CreateAccount createAccount = new CreateAccount(driver);
+        AccountPage accountPage = new AccountPage(driver);
+        LoginPage loginPage = new LoginPage(driver);
+        AccountLogedPage accountLogedPage = new AccountLogedPage(driver);
+        ProfilePage profilePage = new ProfilePage(driver);
+        registerPage.clickToRegister();
+        log.info("{} {} {} {} {}", email, name, password, confirm, errorMessage);
+        createAccount.insertEmail(email);
+        createAccount.insertName(name);
+        createAccount.insertPassword(password);
+        createAccount.insertConfirmPassword(confirm);
+        createAccount.clickRegister();
+        assertTrue(createAccount.isAlertWithTextVisible(errorMessage), "Account was not created: " + errorMessage);
+
+
     }
 
 }

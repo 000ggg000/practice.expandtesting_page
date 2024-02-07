@@ -4,8 +4,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import java.util.List;
 
-public class CreateAccount extends BasePage{
+
+public class CreateAccount extends BasePage {
     @FindBy(id = "email")
     WebElement inputEmail;
 
@@ -27,6 +29,9 @@ public class CreateAccount extends BasePage{
     @FindBy(xpath = "//div[@class='invalid-feedback']")
     WebElement errormessage;
 
+    @FindBy(xpath = "//div[@class='invalid-feedback']")
+    List<WebElement> errormessages;
+
     @FindBy(xpath = "//div[@class='toast-body']")
     WebElement existingAccountMessage;
 
@@ -37,20 +42,30 @@ public class CreateAccount extends BasePage{
     public void insertEmail(String email) {
         inputEmail.sendKeys(email);
     }
+
     public void insertName(String name) {
         inputName.sendKeys(name);
     }
+
     public void insertPassword(String password) {
         inputPassword.sendKeys(password);
     }
+
     public void insertConfirmPassword(String password) {
         inputConfirmPasword.sendKeys(password);
     }
+
     public void clickRegister() {
         registerButton.click();
     }
 
     boolean errorIsDisplayed() {
 
-        return errormessage.isDisplayed();    }
+        return errormessage.isDisplayed();
+    }
+
+    public boolean isAlertWithTextVisible(String alertMessage) {
+
+        return errormessages.stream().map(w -> w.getText().contains(alertMessage)).findAny().isPresent();
+    }
 }

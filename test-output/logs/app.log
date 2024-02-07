@@ -1,22 +1,63 @@
-2024-02-06 13:38:19 [main] TRACE lt.techin.RegisterPageTest - Generated mail tnz550XAY1707219499823@mail.com
-2024-02-06 13:38:20 [main] INFO  lt.techin.RegisterPageTest - Account created with email tnz550XAY1707219499823@mail.com
-2024-02-06 13:38:20 [main] INFO  lt.techin.utils.TestUtils - Screenshot moved to C:\Users\Vartotojas\Desktop\AutomatinisTestavimas\2024-02-05\CreateAnAccount\test-output\screenshots\20240206\133820510_accountCreated.png
-2024-02-06 13:38:22 [main] INFO  lt.techin.RegisterPageTest - text
-2024-02-06 13:38:23 [main] INFO  lt.techin.BasePageTest - WebDriver closed
-2024-02-06 13:39:35 [main] INFO  lt.techin.RegisterPageTest - Account created with email amc014YBY1707219575102@mail.com
-2024-02-06 13:39:35 [main] INFO  lt.techin.utils.TestUtils - Screenshot moved to C:\Users\Vartotojas\Desktop\AutomatinisTestavimas\2024-02-05\CreateAnAccount\test-output\screenshots\20240206\133935796_accountCreated.png
-2024-02-06 13:39:37 [main] INFO  lt.techin.RegisterPageTest - text
-2024-02-06 13:39:38 [main] INFO  lt.techin.BasePageTest - WebDriver closed
-2024-02-06 13:44:29 [main] INFO  lt.techin.BasePageTest - WebDriver closed
-2024-02-06 14:11:06 [main] INFO  lt.techin.RegisterPageTest - Account created with email jli214VOP1707221465903@mail.com
-2024-02-06 14:11:06 [main] INFO  lt.techin.utils.TestUtils - Screenshot moved to C:\Users\Vartotojas\Desktop\AutomatinisTestavimas\2024-02-05\CreateAnAccount\test-output\screenshots\20240206\141106721_accountCreated.png
-2024-02-06 14:11:08 [main] INFO  lt.techin.RegisterPageTest - text
-2024-02-06 14:11:09 [main] INFO  lt.techin.BasePageTest - WebDriver closed
-2024-02-06 14:11:11 [main] INFO  lt.techin.BasePageTest - WebDriver closed
-2024-02-06 14:11:14 [main] INFO  lt.techin.RegisterPageTest - Account already exist message.
-2024-02-06 14:11:14 [main] INFO  lt.techin.BasePageTest - WebDriver closed
-2024-02-06 14:27:20 [main] INFO  lt.techin.RegisterPageTest - Account created with email lvo754LPO1707222439564@mail.com
-2024-02-06 14:27:20 [main] INFO  lt.techin.utils.TestUtils - Screenshot moved to C:\Users\Vartotojas\Desktop\AutomatinisTestavimas\2024-02-05\CreateAnAccount\test-output\screenshots\20240206\142720263_accountCreated.png
-2024-02-06 14:27:22 [main] INFO  lt.techin.utils.TestUtils - Screenshot moved to C:\Users\Vartotojas\Desktop\AutomatinisTestavimas\2024-02-05\CreateAnAccount\test-output\screenshots\20240206\142722215_Logged out from the account..png
-2024-02-06 14:27:23 [main] INFO  lt.techin.RegisterPageTest - The user was redirected to the login page
-2024-02-06 14:27:23 [main] INFO  lt.techin.BasePageTest - WebDriver closed
+2024-02-07 08:35:55 [main] INFO  lt.techin.RegisterPageTest - useraruser1234@mail.com  John123 John123 User name is required
+2024-02-07 08:35:55 [main] INFO  lt.techin.BasePageTest - WebDriver closed
+2024-02-07 08:35:57 [main] INFO  lt.techin.RegisterPageTest - null John John123 John123 Email address is required
+2024-02-07 08:35:57 [main] INFO  lt.techin.utils.TestUtils - Screenshot moved to C:\Users\Vartotojas\Desktop\AutomatinisTestavimas\2024-02-05\CreateAnAccount\test-output\screenshots\20240207\083557951_[2] null, John, John123, John123, Email address is required.png
+2024-02-07 08:35:58 [main] INFO  lt.techin.BasePageTest - WebDriver closed
+2024-02-07 08:36:00 [main] INFO  lt.techin.RegisterPageTest - useraruser1234@mail.com John null John123 Password is required
+2024-02-07 08:36:00 [main] INFO  lt.techin.utils.TestUtils - Screenshot moved to C:\Users\Vartotojas\Desktop\AutomatinisTestavimas\2024-02-05\CreateAnAccount\test-output\screenshots\20240207\083600595_[3] useraruser1234@mail.com, John, null, John123, Password is required.png
+2024-02-07 08:36:00 [main] INFO  lt.techin.BasePageTest - WebDriver closed
+2024-02-07 08:36:02 [main] INFO  lt.techin.RegisterPageTest - useraruser1234@mail.com John John123 null Confirm Password is required
+2024-02-07 08:36:03 [main] INFO  lt.techin.utils.TestUtils - Screenshot moved to C:\Users\Vartotojas\Desktop\AutomatinisTestavimas\2024-02-05\CreateAnAccount\test-output\screenshots\20240207\083603125_[4] useraruser1234@mail.com, John, John123, null, Confirm Password is required.png
+2024-02-07 08:36:03 [main] INFO  lt.techin.BasePageTest - WebDriver closed
+2024-02-07 08:36:05 [main] INFO  lt.techin.RegisterPageTest - useraruser1234@mail.com John John123 Jon123 Passwords don't match!
+2024-02-07 08:36:05 [main] INFO  lt.techin.BasePageTest - WebDriver closed
+2024-02-07 08:36:07 [main] INFO  lt.techin.RegisterPageTest - useraruser1234@mail.com John John12 Jon12 Password should be between 6 and 30 characters
+2024-02-07 08:36:08 [main] INFO  lt.techin.BasePageTest - WebDriver closed
+2024-02-07 08:36:10 [main] INFO  lt.techin.RegisterPageTest - useraruser1234@mail.com J John12 Jon12 User name should be between 4 and 30 characters
+2024-02-07 08:36:10 [main] INFO  lt.techin.BasePageTest - WebDriver closed
+2024-02-07 08:36:12 [main] INFO  lt.techin.RegisterPageTest - useraruser1234mail.com J John12 Jon12 Email address is invalid
+2024-02-07 08:36:13 [main] INFO  lt.techin.BasePageTest - WebDriver closed
+2024-02-07 08:36:14 [main] INFO  lt.techin.RegisterPageTest - useraruser1234@mailcom J John12 Jon12 Email address is invalid
+2024-02-07 08:36:15 [main] INFO  lt.techin.BasePageTest - WebDriver closed
+2024-02-07 08:36:17 [main] INFO  lt.techin.RegisterPageTest - useraruser1234@mail.com J John12 Jon12 Email address is invalid
+2024-02-07 08:36:17 [main] INFO  lt.techin.BasePageTest - WebDriver closed
+2024-02-07 08:38:05 [main] INFO  lt.techin.RegisterPageTest - useraruser1234@mail.com  John123 John123 User name is required
+2024-02-07 08:38:05 [main] INFO  lt.techin.BasePageTest - WebDriver closed
+2024-02-07 08:38:07 [main] INFO  lt.techin.RegisterPageTest -  John John123 John123 Email address is required
+2024-02-07 08:38:08 [main] INFO  lt.techin.BasePageTest - WebDriver closed
+2024-02-07 08:38:10 [main] INFO  lt.techin.RegisterPageTest - useraruser1234@mail.com John  John123 Password is required
+2024-02-07 08:38:11 [main] INFO  lt.techin.BasePageTest - WebDriver closed
+2024-02-07 08:38:13 [main] INFO  lt.techin.RegisterPageTest - useraruser1234@mail.com John John123  Confirm Password is required
+2024-02-07 08:38:13 [main] INFO  lt.techin.BasePageTest - WebDriver closed
+2024-02-07 08:38:15 [main] INFO  lt.techin.RegisterPageTest - useraruser1234@mail.com John John123 Jon123 Passwords don't match!
+2024-02-07 08:38:16 [main] INFO  lt.techin.BasePageTest - WebDriver closed
+2024-02-07 08:38:18 [main] INFO  lt.techin.RegisterPageTest - useraruser1234@mail.com John John12 Jon12 Password should be between 6 and 30 characters
+2024-02-07 08:38:18 [main] INFO  lt.techin.BasePageTest - WebDriver closed
+2024-02-07 08:38:20 [main] INFO  lt.techin.RegisterPageTest - useraruser1234@mail.com J John12 Jon12 User name should be between 4 and 30 characters
+2024-02-07 08:38:20 [main] INFO  lt.techin.BasePageTest - WebDriver closed
+2024-02-07 08:38:23 [main] INFO  lt.techin.RegisterPageTest - useraruser1234mail.com J John12 Jon12 Email address is invalid
+2024-02-07 08:38:23 [main] INFO  lt.techin.BasePageTest - WebDriver closed
+2024-02-07 08:38:25 [main] INFO  lt.techin.RegisterPageTest - useraruser1234@mailcom J John12 Jon12 Email address is invalid
+2024-02-07 08:38:25 [main] INFO  lt.techin.BasePageTest - WebDriver closed
+2024-02-07 08:38:27 [main] INFO  lt.techin.RegisterPageTest - useraruser1234@mail.com J John12 Jon12 Email address is invalid
+2024-02-07 08:38:28 [main] INFO  lt.techin.BasePageTest - WebDriver closed
+2024-02-07 08:39:40 [main] INFO  lt.techin.RegisterPageTest - useraruser1234@mail.com  John123 John123 User name is required
+2024-02-07 08:39:41 [main] INFO  lt.techin.BasePageTest - WebDriver closed
+2024-02-07 08:39:43 [main] INFO  lt.techin.RegisterPageTest -  John John123 John123 Email address is required
+2024-02-07 08:39:44 [main] INFO  lt.techin.BasePageTest - WebDriver closed
+2024-02-07 08:39:46 [main] INFO  lt.techin.RegisterPageTest - useraruser1234@mail.com John  John123 Password is required
+2024-02-07 08:39:46 [main] INFO  lt.techin.BasePageTest - WebDriver closed
+2024-02-07 08:39:48 [main] INFO  lt.techin.RegisterPageTest - useraruser1234@mail.com John John123  Confirm Password is required
+2024-02-07 08:39:49 [main] INFO  lt.techin.BasePageTest - WebDriver closed
+2024-02-07 08:39:51 [main] INFO  lt.techin.RegisterPageTest - useraruser1234@mail.com John John123 Jon123 Passwords don't match!
+2024-02-07 08:39:51 [main] INFO  lt.techin.BasePageTest - WebDriver closed
+2024-02-07 08:39:53 [main] INFO  lt.techin.RegisterPageTest - useraruser1234@mail.com John John12 Jon12 Password should be between 6 and 30 characters
+2024-02-07 08:39:53 [main] INFO  lt.techin.BasePageTest - WebDriver closed
+2024-02-07 08:39:55 [main] INFO  lt.techin.RegisterPageTest - useraruser1234@mail.com J John12 Jon12 User name should be between 4 and 30 characters
+2024-02-07 08:39:56 [main] INFO  lt.techin.BasePageTest - WebDriver closed
+2024-02-07 08:39:58 [main] INFO  lt.techin.RegisterPageTest - useraruser1234mail.com John John12 Jon12 Email address is invalid
+2024-02-07 08:39:58 [main] INFO  lt.techin.BasePageTest - WebDriver closed
+2024-02-07 08:40:00 [main] INFO  lt.techin.RegisterPageTest - useraruser1234@mailcom John John12 Jon12 Email address is invalid
+2024-02-07 08:40:01 [main] INFO  lt.techin.BasePageTest - WebDriver closed
+2024-02-07 08:40:03 [main] INFO  lt.techin.RegisterPageTest - useraruser1234@mail.com John John12 Jon12 Email address is invalid
+2024-02-07 08:40:03 [main] INFO  lt.techin.BasePageTest - WebDriver closed
